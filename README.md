@@ -1,6 +1,7 @@
 # ECSE211 Project: Team 10 - DORAEMON
 
 ## Overview:
+<img width="1440" alt="UserAndEmailDemo" src="https://github.com/chaggysen/McGill-DesignPrinciplesAndMethods-FinalProject/blob/master/ExampleMap.png">
 The goal of this project is to design and construct a machine that can autonomously navigate a closed course to an island, search for a set of containers, and deposit as many of these as possible into a bin as shown in Figure 1 – all within a prescribed time limit.
 
 ## The playing field:
