@@ -1,0 +1,369 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material2 "DPM-Tile"
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material1 "DPM-Tile"
+      material2 "Rubber"
+      coulombFriction [
+        1000
+      ]
+      bounce 0.1
+      softCFM 0.0001
+      bumpSound ""
+      rollSound ""
+    }
+    ContactProperties {
+      material1 "DPM-Tile"
+      material2 "DPM-BallCaster"
+      coulombFriction [
+        1000
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.9999781805036492 0.00462416503072032 0.004717585651584523 1.5908181421607384
+  position 3.840015133932765 7.046717925150646 1.084578249776208
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF ARENA DPM-CompetitionArena {
+  children [
+    DEF CHUTE1 DPM-Chute {
+      position 0 9
+      rotation 0 1 0 1.57
+    }
+    DEF CHUTE2 DPM-Chute {
+      name "chute2"
+      position 0 12
+      rotation 0 1 0 1.57
+    }
+    DEF OBSTACLE3 DPM-Obstacle {
+      name "obstacle3"
+      position 3 3
+    }
+    DEF OBSTACLE4 DPM-Obstacle {
+      name "obstacle4"
+      position 13.5 5.5
+      sections 6
+    }
+    DEF BRIDGE2 DPM-Bridge {
+      name "bridge2"
+      position 10.5 5
+      rotation 1.57
+      length 0.6096
+      sections 10
+    }
+    DEF BRIDGE1 DPM-Bridge {
+      name "bridge1"
+      position 5 1.5
+      length 0.6096
+      sections 10
+    }
+  ]
+  tileColor_0_0 1 0.5 0.5
+  tileColor_0_1 1 0.5 0.5
+  tileColor_0_2 1 0.5 0.5
+  tileColor_0_3 1 0.5 0.5
+  tileHeight_0_4 -0.1
+  tileHeight_0_5 -0.1
+  tileHeight_0_6 -0.1
+  tileHeight_0_7 -0.1
+  tileHeight_0_8 -0.1
+  tileColor_1_0 1 0.5 0.5
+  tileColor_1_1 1 0.5 0.5
+  tileColor_1_2 1 0.5 0.5
+  tileColor_1_3 1 0.5 0.5
+  tileHeight_1_4 -0.1
+  tileColor_1_5 0.25 0.25 0.75
+  tileHeight_1_5 -0.2
+  tileColor_1_6 0.25 0.25 0.75
+  tileHeight_1_6 -0.2
+  tileColor_1_7 0.25 0.25 0.75
+  tileHeight_1_7 -0.2
+  tileHeight_1_8 -0.1
+  tileColor_2_0 1 0.5 0.5
+  tileColor_2_1 1 0.5 0.5
+  tileColor_2_2 1 0.5 0.5
+  tileColor_2_3 1 0.5 0.5
+  tileHeight_2_4 -0.1
+  tileColor_2_5 0.25 0.25 0.75
+  tileHeight_2_5 -0.2
+  tileColor_2_6 0.1 0.1 0.5
+  tileHeight_2_6 -0.3
+  tileColor_2_7 0.25 0.25 0.75
+  tileHeight_2_7 -0.2
+  tileHeight_2_8 -0.1
+  tileColor_3_0 1 0.5 0.5
+  tileColor_3_1 1 0.5 0.5
+  tileColor_3_2 1 0.5 0.5
+  tileColor_3_3 1 0.5 0.5
+  tileHeight_3_4 -0.1
+  tileColor_3_5 0.25 0.25 0.75
+  tileHeight_3_5 -0.2
+  tileColor_3_6 0.1 0.1 0.5
+  tileHeight_3_6 -0.3
+  tileColor_3_7 0.25 0.25 0.75
+  tileHeight_3_7 -0.2
+  tileHeight_3_8 -0.1
+  tileHeight_4_0 -0.1
+  tileColor_4_1 0.7 0.7 0.7
+  tileHeight_4_2 -0.1
+  tileHeight_4_3 -0.1
+  tileHeight_4_4 -0.1
+  tileColor_4_5 0.25 0.25 0.75
+  tileHeight_4_5 -0.2
+  tileColor_4_6 0.1 0.1 0.5
+  tileHeight_4_6 -0.3
+  tileColor_4_7 0.25 0.25 0.75
+  tileHeight_4_7 -0.2
+  tileHeight_4_8 -0.1
+  tileHeight_5_0 -0.1
+  tileColor_5_1 0.7 0.7 0.7
+  tileHeight_5_2 -0.1
+  tileHeight_5_3 -0.1
+  tileHeight_5_4 -0.1
+  tileColor_5_5 0.25 0.25 0.75
+  tileHeight_5_5 -0.2
+  tileColor_5_6 0.1 0.1 0.5
+  tileHeight_5_6 -0.3
+  tileColor_5_7 0.25 0.25 0.75
+  tileHeight_5_7 -0.2
+  tileHeight_5_8 -0.1
+  tileColor_6_0 0.82 0.82 0.4
+  tileColor_6_1 0.82 0.82 0.4
+  tileColor_6_2 0.82 0.82 0.4
+  tileColor_6_3 0.82 0.82 0.4
+  tileHeight_6_4 -0.1
+  tileColor_6_5 0.25 0.25 0.75
+  tileHeight_6_5 -0.2
+  tileColor_6_6 0.1 0.1 0.5
+  tileHeight_6_6 -0.3
+  tileColor_6_7 0.25 0.25 0.75
+  tileHeight_6_7 -0.2
+  tileHeight_6_8 -0.1
+  tileColor_7_0 0.82 0.82 0.4
+  tileColor_7_1 0.82 0.82 0.4
+  tileColor_7_2 0.82 0.82 0.4
+  tileColor_7_3 0.82 0.82 0.4
+  tileHeight_7_4 -0.1
+  tileColor_7_5 0.25 0.25 0.75
+  tileHeight_7_5 -0.2
+  tileColor_7_6 0.1 0.1 0.5
+  tileHeight_7_6 -0.3
+  tileColor_7_7 0.25 0.25 0.75
+  tileHeight_7_7 -0.2
+  tileHeight_7_8 -0.1
+  tileColor_8_0 0.82 0.82 0.4
+  tileColor_8_1 0.82 0.82 0.4
+  tileColor_8_2 0.82 0.82 0.4
+  tileColor_8_3 0.82 0.82 0.4
+  tileHeight_8_4 -0.1
+  tileColor_8_5 0.25 0.25 0.75
+  tileHeight_8_5 -0.2
+  tileColor_8_6 0.25 0.25 0.75
+  tileHeight_8_6 -0.2
+  tileColor_8_7 0.25 0.25 0.75
+  tileHeight_8_7 -0.2
+  tileHeight_8_8 -0.1
+  tileColor_9_0 0.82 0.82 0.4
+  tileColor_9_1 0.82 0.82 0.4
+  tileColor_9_2 0.82 0.82 0.4
+  tileColor_9_3 0.82 0.82 0.4
+  tileHeight_9_4 -0.1
+  tileHeight_9_5 -0.1
+  tileHeight_9_6 -0.1
+  tileHeight_9_7 -0.1
+  tileHeight_9_8 -0.1
+  tileColor_10_0 0.82 0.82 0.4
+  tileColor_10_1 0.82 0.82 0.4
+  tileColor_10_2 0.82 0.82 0.4
+  tileColor_10_3 0.82 0.82 0.4
+  tileColor_10_4 0.7 0.7 0.7
+  tileColor_10_5 0.7 0.7 0.7
+  tileColor_10_6 0.5 1 0.5
+  tileColor_10_7 0.5 1 0.5
+  tileColor_10_8 0.5 1 0.5
+  tileColor_11_0 0.82 0.82 0.4
+  tileColor_11_1 0.82 0.82 0.4
+  tileColor_11_2 0.82 0.82 0.4
+  tileColor_11_3 0.82 0.82 0.4
+  tileHeight_11_4 -0.1
+  tileColor_11_5 0.5 1 0.5
+  tileColor_11_6 0.5 1 0.5
+  tileColor_11_7 0.5 1 0.5
+  tileColor_11_8 0.5 1 0.5
+  tileColor_12_0 0.82 0.82 0.4
+  tileColor_12_1 0.82 0.82 0.4
+  tileColor_12_2 0.82 0.82 0.4
+  tileColor_12_3 0.82 0.82 0.4
+  tileHeight_12_4 -0.1
+  tileColor_12_5 0.5 1 0.5
+  tileColor_12_6 0.5 1 0.5
+  tileColor_12_7 0.5 1 0.5
+  tileColor_12_8 0.5 1 0.5
+  tileColor_13_0 0.82 0.82 0.4
+  tileColor_13_1 0.82 0.82 0.4
+  tileColor_13_2 0.82 0.82 0.4
+  tileColor_13_3 0.82 0.82 0.4
+  tileHeight_13_4 -0.1
+  tileColor_13_5 0.5 1 0.5
+  tileColor_13_6 0.5 1 0.5
+  tileColor_13_7 0.5 1 0.5
+  tileColor_13_8 0.5 1 0.5
+  tileColor_14_0 0.82 0.82 0.4
+  tileColor_14_1 0.82 0.82 0.4
+  tileColor_14_2 0.82 0.82 0.4
+  tileColor_14_3 0.82 0.82 0.4
+  tileHeight_14_4 -0.1
+  tileColor_14_5 0.5 1 0.5
+  tileColor_14_6 0.5 1 0.5
+  tileColor_14_7 0.5 1 0.5
+  tileColor_14_8 0.5 1 0.5
+}
+DPM-Block {
+  name "block1"
+  translation 1.82224 0.0498704 0.727939
+  rotation 0.7073804515999568 -2.5183029125240864e-05 0.7068330043652861 -1.7376134522023792e-06
+  dimension 0.1
+  mass 2
+}
+DPM-Block {
+  name "block2"
+  translation 1.81963 0.0498699 0.460166
+  rotation 0.7073804515653804 -2.997438495055491e-05 0.7068330042129434 -1.737613452381837e-06
+  dimension 0.1
+  mass 2
+}
+DPM-Block {
+  name "block3"
+  translation 1.20556 0.0498692 0.765153
+  rotation 0.7073804516588483 -2.736099570894689e-05 0.7068330042253964 -1.7376134521109539e-06
+  dimension 0.1
+  mass 2
+}
+DPM-Block {
+  name "block4"
+  translation 2.26035 0.0498697 0.906174
+  rotation 0.7073651333998295 0.006579518302850707 0.7068177119945026 -1.7376820398269185e-06
+  dimension 0.1
+  mass 2
+}
+DPM-Robot {
+  hidden linearVelocity_0 -3.633632585676086e-08 1.2802249880492978e-07 -1.1355759735497838e-06
+  hidden angularVelocity_0 2.2255875303909817e-07 -4.0788180641607064e-07 7.499209792041836e-08
+  hidden linearVelocity_4 2.092963133773873e-09 1.478243700434135e-07 -1.0981299024917945e-06
+  hidden angularVelocity_4 2.2255684165134994e-07 -4.5429502977883505e-07 7.467219292516372e-08
+  hidden position_7_0 4.583968080803948e-07
+  hidden translation_8 -8.627766057145436e-09 9.320339509066855e-07 0.00012794006832797175
+  hidden rotation_8 -0.00046712768790860477 0.006966557735894551 0.9999756241354264 0.13754580923917212
+  hidden linearVelocity_8 -6.223107447132918e-08 1.3583135427106254e-07 -1.1175487082455601e-06
+  hidden angularVelocity_8 -0.00018076327430357545 0.19951354808710625 1.5122368021899971e-05
+  hidden rotation_14 -1 0 0 5.02564719424531e-06
+  hidden linearVelocity_14 -3.6940021381569286e-08 1.7711169312971243e-07 -1.2125204445449252e-06
+  hidden angularVelocity_14 -5.0023102583761315e-05 -4.083465975391819e-07 7.372267582750173e-08
+  hidden rotation_17 -1 0 0 5.035269721551485e-06
+  hidden linearVelocity_17 -9.056403613350204e-09 1.8554484577616324e-07 -1.1651444803046617e-06
+  hidden angularVelocity_17 -5.0118105996092285e-05 -4.0579914248655124e-07 7.634835522475139e-08
+  name "T10Robot"
+  translation 4.360000934854624 0.06199483208823451 2.5204345684937475
+  rotation 0.9999977028490848 0.00014323535426566023 -0.002138639798216139 0.006894404169336101
+  children [
+    T10Robot_arm1-solid {
+      translation -0.0636 0.0136 -0.0635
+      rotation 1 0 0 -1.5707953071795862
+    }
+    T10Robot_base-assembly-solid {
+      translation 0 -0.0063 0.0279
+      rotation 1 0 0 -1.5707953071795862
+    }
+    EV3-LargeMotor {
+      name "B"
+      translation 0.063 0.03 0.002
+      rotation -0.577349935856137 0.5773509358560258 -0.577349935856137 2.09439
+      position -4.6464062672777585e-09
+      children [
+        T10Robot_arm3-solid {
+          translation 0.02 0.128 -0.032
+          rotation 0 1 0 -1.5707953071795862
+        }
+        T10Robot_arm2-solid {
+          translation 0.016 0.0637 3.67321e-08
+          rotation 0 1 0 1.5708
+        }
+      ]
+    }
+    BallCaster {
+      translation 0 -0.042 0.1033
+      rotation 1 0 0 -1.5707996938995747
+    }
+    EV3-Ultrasonic {
+      name "S1"
+      translation 0 -0.03 -0.02
+      rotation 0.9999999999964972 -1.8715699999934444e-06 1.8715799999934445e-06 1.5708
+    }
+    EV3-Ultrasonic {
+      name "S4"
+      translation 0 0.0415 -0.02
+      rotation 3.3905113482557537e-09 0.70710528118436 0.707108281185553 3.14159
+    }
+    EV3-LargeMotor {
+      name "A"
+      translation -0.05575 -0.02625 0.0418
+      rotation 1 0 0 -1.5707953071795862
+      position 4.077576494292172
+      children [
+        Wheel {
+          translation -0.024 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+      ]
+    }
+    EV3-LargeMotor {
+      name "D"
+      translation 0.0558 -0.02625 0.0418
+      rotation 1 0 0 -1.5707953071795862
+      position 6.129499118872336e-06
+      children [
+        Wheel {
+          translation 0.024 0 0
+          rotation 0 0 1 1.5708003061004252
+        }
+      ]
+    }
+    EV3-ColorSensor {
+      name "S2"
+      translation -0.0516 -0.0343 -0.0316
+      rotation 0 -0.9999999999999999 0 1.5707953071795862
+    }
+    EV3-ColorSensor {
+      name "S3"
+      translation 0.0516 -0.0343 -0.0316
+      rotation 0 -1 0 -1.5707953071795862
+    }
+    EV3 {
+      translation 0 0 0.0633
+      rotation 1 0 0 -1.5708
+    }
+  ]
+  controller "T10Controller"
+}

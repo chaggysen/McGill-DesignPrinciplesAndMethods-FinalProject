@@ -1,0 +1,359 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material1 "DPM-Tile"
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material1 "DPM-Tile"
+      material2 "Rubber"
+      coulombFriction [
+        1000
+      ]
+      softERP 0.4
+      softCFM 0.00025
+    }
+    ContactProperties {
+      material1 "DPM-Tile"
+      material2 "DPM-BallCaster"
+      coulombFriction [
+        1000
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.9997083486147401 -0.0189292154976452 -0.014996750002341963 1.3402839689958304
+  position 1.3444311803539701 4.113006335438456 1.9176797387767306
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF ARENA DPM-CompetitionArena {
+  wallHeight 0.3
+  children [
+    DPM-Obstacle {
+      position 7.52 4.6
+      rotation 0.52
+      sections 3
+    }
+    DEF CHUTE1 DPM-Chute {
+      name "chute1"
+      position 3 5
+      rotation 0 1 0 4.71
+    }
+    DEF CHUTE2 DPM-Chute {
+      name "chute2"
+      position 5 9
+      rotation 0 1 0 1.57
+    }
+    DEF BRIDGE1 DPM-Bridge {
+      name "bridge1"
+      position 4 7.5
+      length 0.6096
+      sections 10
+    }
+    DEF BRIDGE2 DPM-Bridge {
+      name "bridge2"
+      position 11 1.5
+      length 0.6096
+      sections 10
+    }
+  ]
+  tileColor_0_0 1 0.5 0.5
+  tileColor_0_1 1 0.5 0.5
+  tileColor_0_2 1 0.5 0.5
+  tileColor_0_3 1 0.5 0.5
+  tileColor_0_4 1 0.5 0.5
+  tileColor_0_5 1 0.5 0.5
+  tileColor_0_6 1 0.5 0.5
+  tileColor_0_7 1 0.5 0.5
+  tileColor_0_8 1 0.5 0.5
+  tileColor_1_0 1 0.5 0.5
+  tileColor_1_1 1 0.5 0.5
+  tileColor_1_2 1 0.5 0.5
+  tileColor_1_3 1 0.5 0.5
+  tileColor_1_4 1 0.5 0.5
+  tileColor_1_5 1 0.5 0.5
+  tileColor_1_6 1 0.5 0.5
+  tileColor_1_7 1 0.5 0.5
+  tileColor_1_8 1 0.5 0.5
+  tileColor_2_0 1 0.5 0.5
+  tileColor_2_1 1 0.5 0.5
+  tileColor_2_2 1 0.5 0.5
+  tileColor_2_3 1 0.5 0.5
+  tileColor_2_4 1 0.5 0.5
+  tileColor_2_5 1 0.5 0.5
+  tileColor_2_6 1 0.5 0.5
+  tileColor_2_7 1 0.5 0.5
+  tileColor_2_8 1 0.5 0.5
+  tileHeight_3_0 -0.1
+  tileHeight_3_1 -0.1
+  tileHeight_3_2 -0.1
+  tileHeight_3_3 -0.1
+  tileHeight_3_4 -0.1
+  tileHeight_3_5 -0.1
+  tileHeight_3_6 -0.1
+  tileColor_3_7 0.7 0.7 0.7
+  tileHeight_3_8 -0.1
+  tileHeight_4_0 -0.1
+  tileHeight_4_1 -0.1
+  tileHeight_4_2 -0.1
+  tileHeight_4_3 -0.1
+  tileHeight_4_4 -0.1
+  tileHeight_4_5 -0.1
+  tileHeight_4_6 -0.1
+  tileColor_4_7 0.7 0.7 0.7
+  tileHeight_4_8 -0.1
+  tileHeight_5_0 -0.1
+  tileColor_5_1 0.82 0.82 0.4
+  tileColor_5_2 0.82 0.82 0.4
+  tileColor_5_3 0.82 0.82 0.4
+  tileColor_5_4 0.82 0.82 0.4
+  tileColor_5_5 0.82 0.82 0.4
+  tileColor_5_6 0.82 0.82 0.4
+  tileColor_5_7 0.82 0.82 0.4
+  tileHeight_5_8 -0.1
+  tileHeight_6_0 -0.1
+  tileColor_6_1 0.82 0.82 0.4
+  tileColor_6_2 0.82 0.82 0.4
+  tileColor_6_3 0.82 0.82 0.4
+  tileColor_6_4 0.82 0.82 0.4
+  tileColor_6_5 0.82 0.82 0.4
+  tileColor_6_6 0.82 0.82 0.4
+  tileColor_6_7 0.82 0.82 0.4
+  tileHeight_6_8 -0.1
+  tileHeight_7_0 -0.1
+  tileColor_7_1 0.82 0.82 0.4
+  tileColor_7_2 0.82 0.82 0.4
+  tileColor_7_3 0.82 0.82 0.4
+  tileColor_7_4 0.82 0.82 0.4
+  tileColor_7_5 0.82 0.82 0.4
+  tileColor_7_6 0.82 0.82 0.4
+  tileColor_7_7 0.82 0.82 0.4
+  tileHeight_7_8 -0.1
+  tileHeight_8_0 -0.1
+  tileColor_8_1 0.82 0.82 0.4
+  tileColor_8_2 0.82 0.82 0.4
+  tileColor_8_3 0.82 0.82 0.4
+  tileColor_8_4 0.82 0.82 0.4
+  tileColor_8_5 0.82 0.82 0.4
+  tileColor_8_6 0.82 0.82 0.4
+  tileColor_8_7 0.82 0.82 0.4
+  tileHeight_8_8 -0.1
+  tileHeight_9_0 -0.1
+  tileColor_9_1 0.82 0.82 0.4
+  tileColor_9_2 0.82 0.82 0.4
+  tileColor_9_3 0.82 0.82 0.4
+  tileColor_9_4 0.82 0.82 0.4
+  tileColor_9_5 0.82 0.82 0.4
+  tileColor_9_6 0.82 0.82 0.4
+  tileColor_9_7 0.82 0.82 0.4
+  tileHeight_9_8 -0.1
+  tileHeight_10_0 -0.1
+  tileColor_10_1 0.7 0.7 0.7
+  tileHeight_10_2 -0.1
+  tileHeight_10_3 -0.1
+  tileHeight_10_4 -0.1
+  tileHeight_10_5 -0.1
+  tileHeight_10_6 -0.1
+  tileHeight_10_7 -0.1
+  tileHeight_10_8 -0.1
+  tileHeight_11_0 -0.1
+  tileColor_11_1 0.7 0.7 0.7
+  tileHeight_11_2 -0.1
+  tileHeight_11_3 -0.1
+  tileHeight_11_4 -0.1
+  tileHeight_11_5 -0.1
+  tileHeight_11_6 -0.1
+  tileHeight_11_7 -0.1
+  tileHeight_11_8 -0.1
+  tileColor_12_0 0.5 1 0.5
+  tileColor_12_1 0.5 1 0.5
+  tileColor_12_2 0.5 1 0.5
+  tileColor_12_3 0.5 1 0.5
+  tileColor_12_4 0.5 1 0.5
+  tileColor_12_5 0.5 1 0.5
+  tileColor_12_6 0.5 1 0.5
+  tileColor_12_7 0.5 1 0.5
+  tileColor_12_8 0.5 1 0.5
+  tileColor_13_0 0.5 1 0.5
+  tileColor_13_1 0.5 1 0.5
+  tileColor_13_2 0.5 1 0.5
+  tileColor_13_3 0.5 1 0.5
+  tileColor_13_4 0.5 1 0.5
+  tileColor_13_5 0.5 1 0.5
+  tileColor_13_6 0.5 1 0.5
+  tileColor_13_7 0.5 1 0.5
+  tileColor_13_8 0.5 1 0.5
+  tileColor_14_0 0.5 1 0.5
+  tileColor_14_1 0.5 1 0.5
+  tileColor_14_2 0.5 1 0.5
+  tileColor_14_3 0.5 1 0.5
+  tileColor_14_4 0.5 1 0.5
+  tileColor_14_5 0.5 1 0.5
+  tileColor_14_6 0.5 1 0.5
+  tileColor_14_7 0.5 1 0.5
+  tileColor_14_8 0.5 1 0.5
+}
+DPM-Block {
+  name "block1"
+  texture "block4"
+  translation 1.6800000607043157 0.04980379949697237 1.6699999429725036
+  rotation 0.7075084651439316 0.00491208559382249 0.7066877975207984 -1.7406719508869723e-06
+  dimension 0.1
+  mass 3
+}
+DPM-Block {
+  name "block1(1)"
+  texture "block4"
+  translation 2.900000060704316 0.04980379949697236 1.0599999429725038
+  rotation 0.7075084651615398 0.00491208560009763 0.7066877975031263 -1.7406719509659697e-06
+  dimension 0.1
+  mass 3
+}
+DPM-Block {
+  name "block3"
+  translation 1.6900000612484853 0.04996730001832411 0.4599999388433581
+  rotation 0.707209190066931 0.00015380269930663143 0.7070043407431138 -1.7332008649542334e-06
+  dimension 0.1
+  mass 0.5
+}
+DPM-Block {
+  name "block3(1)"
+  translation 2.8900000612484837 0.049967300018324105 2.279999938843359
+  rotation 0.7072091900685697 0.00015380270510795282 0.7070043407414733 -1.7332008649557504e-06
+  dimension 0.1
+  mass 0.5
+}
+DPM-Block {
+  name "block4"
+  texture "block3"
+  translation 1.9800000610524349 0.049869199496253735 1.6699999406305024
+  rotation 0.7073785462534602 0.002319566706268705 0.7068311056473366 -1.7376332214234403e-06
+  dimension 0.1
+  mass 2
+}
+DPM-Block {
+  name "block4(1)"
+  texture "block3"
+  translation 2.590000061052433 0.049869199496253735 1.0699999406305025
+  rotation 0.707378546256913 0.0023195667032657194 0.7068311056438913 -1.7376332214541208e-06
+  dimension 0.1
+  mass 2
+}
+DPM-Block {
+  name "block5"
+  texture "block2"
+  translation 1.9900000612269328 0.04993459949575271 1.0699999391938853
+  rotation 0.707243577084396 0.0006115118263576163 0.7069696943477521 -1.7345816326855128e-06
+  dimension 0.1
+  mass 1
+}
+DPM-Block {
+  name "block5(1)"
+  texture "block2"
+  translation 2.5900000612269354 0.04993459949575271 1.6699999391938851
+  rotation 0.7072435770787625 0.0006115118222764276 0.7069696943533913 -1.7345816324950357e-06
+  dimension 0.1
+  mass 1
+}
+DPM-Robot {
+  hidden rotation_8 -0.7006830802129299 -0.20358854363436968 -0.6838091298046242 2.7302670330091203
+  name "T10Robot"
+  translation 0.25 0.1 0.25
+  rotation 0 1 0 1.0150305250839343e-06
+  children [
+    T10Robot_arm1-solid {
+      translation -0.0636 0.0136 -0.0635
+      rotation 1 0 0 -1.5707953071795862
+    }
+    T10Robot_base-assembly-solid {
+      translation 0 -0.0063 0.0279
+      rotation 1 0 0 -1.5707953071795862
+    }
+    EV3-LargeMotor {
+      name "B"
+      translation 0.063 0.03 0.002
+      rotation -0.577349935856137 0.5773509358560258 -0.577349935856137 2.09439
+      children [
+        T10Robot_arm3-solid {
+          translation 0.02 0.128 -0.032
+          rotation 0 1 0 -1.5707953071795862
+        }
+        T10Robot_arm2-solid {
+          translation 0.016 0.0637 3.67321e-08
+          rotation 0 1 0 1.5708
+        }
+      ]
+    }
+    BallCaster {
+      translation 0 -0.042 0.1033
+      rotation 1 0 0 -1.5707996938995747
+    }
+    EV3-Ultrasonic {
+      name "S1"
+      translation 0 -0.03 -0.02
+      rotation 0.9999999999964972 -1.8715699999934444e-06 1.8715799999934445e-06 1.5708
+    }
+    EV3-Ultrasonic {
+      name "S4"
+      translation 0 0.0415 -0.02
+      rotation 3.3905113482557537e-09 0.70710528118436 0.707108281185553 3.14159
+    }
+    EV3-LargeMotor {
+      name "A"
+      translation -0.05575 -0.02625 0.0418
+      rotation 1 0 0 -1.5707953071795862
+      position 4.077571468632406
+      children [
+        Wheel {
+          translation -0.024 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+      ]
+    }
+    EV3-LargeMotor {
+      name "D"
+      translation 0.0558 -0.02625 0.0418
+      rotation 1 0 0 -1.5707953071795862
+      position 1.0940186804095837e-06
+      children [
+        Wheel {
+          translation 0.024 0 0
+          rotation 0 0 1 1.5708003061004252
+        }
+      ]
+    }
+    EV3-ColorSensor {
+      name "S2"
+      translation -0.0516 -0.0343 -0.0316
+      rotation 0 -0.9999999999999999 0 1.5707953071795862
+    }
+    EV3-ColorSensor {
+      name "S3"
+      translation 0.0516 -0.0343 -0.0316
+      rotation 0 -1 0 -1.5707953071795862
+    }
+    EV3 {
+      translation 0 0 0.0633
+      rotation 1 0 0 -1.5708
+    }
+  ]
+  controller "T10Controller"
+}
